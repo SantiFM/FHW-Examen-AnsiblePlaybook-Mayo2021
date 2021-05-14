@@ -1,0 +1,13 @@
+---
+
+
+- name: copia archivo admin.txt del controller al servidorweb
+  copy: src=/home/vagrant/admin.txt  dest=/tmp/admin.txt
+  when: "{{ inventory_hostname == 'node-one' }}"
+  
+- name: copia archivo dev.txt del controller al servidordev
+  copy: src=/home/vagrant/dev.txt dest=/tmp/dev.txt
+  when: "{{ inventory_hostname == 'node-two' }}"
+
+
+...

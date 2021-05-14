@@ -1,0 +1,9 @@
+---
+
+- name: hace un apt update
+  shell: apt update
+
+- name: hace un apt upgrade
+  shell: apt upgrade
+  
+

@@ -1,0 +1,22 @@
+---
+# play1
+
+- hosts: all 
+  remote_user: root
+  tasks:
+    - name: crear un usuario en cada nodo con la informacion dada
+      user: name={{ 'user' }} password=123 group=user home={{'directorio'}}
+
+- hosts: servidorweb
+  roles:
+    - role: webweb
+
+# play2
+
+- hosts: all
+  tasks:
+    - include: play2.yml
+    
+   
+
+...
