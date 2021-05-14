@@ -1,2 +1,3 @@
-# Repositorio exámen Ansible de Santi Ferrer Martínez 1º ASIX
+# Repositorio exámen Ansible, Fundamentos de Hardware, 1º ASIX
+# Santi Ferrer Martínez
 
